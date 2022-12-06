@@ -1,3 +1,13 @@
+#yarn add styled-components twin.macro@rc tailwindcss slick-carousel react-slick react-modal framer-motion feather-icons
+
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
