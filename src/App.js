@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react"
+import "style.css"
+import "tailwindcss/lib/css/preflight.css"
+import AnimationRevealPage from "helpers/AnimationRevealPage"
+// import Hero from "components/hero/FullWidthWithImage"
+import Hero from "components/hero/TwoColumnWithInput"
+// import Hero from "components/pricing/TwoPlansWithDurationSwitcher"
+// import Footer from "components/footers/MiniCenteredFooter";
+import Footer from "components/footers/FiveColumnWithInputForm";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AnimationRevealPage disabled>
+      <Hero />
+      <Routes>
+      <Route path="/" element={< />} />
+      </Routes>
+      <Footer />
+    </AnimationRevealPage>
+  )
 }
 
 export default App;
